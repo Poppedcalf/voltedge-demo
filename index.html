@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VoltEdge Energy | Solar, Backup Power &amp; Electrical Solutions (Concept)</title>
+  <meta name="description" content="Concept website for VoltEdge Energy, a fictional Zimbabwean solar and backup power company. Explore solutions and request a quotation. Designed by Local Edge.">
+  <meta name="theme-color" content="#0F2A1E">
+
+  <!-- Social sharing. To enable an og:image, add an absolute URL once the site is live:
+       <meta property="og:image" content="https://YOUR-USERNAME.github.io/YOUR-REPO/assets/solar-hero-1280.jpg"> -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="VoltEdge Energy | Concept website by Local Edge">
+  <meta property="og:description" content="A fictional solar and backup power brand, designed by Local Edge to demonstrate a conversion-focused service website.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon (inline, no extra file) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230F2A1E'/%3E%3Cpath fill='%23E8A93A' d='M18.5 4 8 18.4h6.6L13 28l11-14.6h-6.4z'/%3E%3C/svg%3E">
+
+  <!-- Fonts: display + body, with system fallbacks defined in style.css -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Prioritise the hero photograph -->
+  <link rel="preload" as="image" href="assets/solar-hero-1280.jpg"
+        imagesrcset="assets/solar-hero-800.jpg 800w, assets/solar-hero-1280.jpg 1280w, assets/solar-hero-1800.jpg 1800w"
+        imagesizes="(min-width: 900px) 64vw, 100vw">
+
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Inline icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="ve-mark" viewBox="0 0 32 32">
+      <rect width="32" height="32" rx="7" fill="#1C4B37"/>
+      <path fill="#E8A93A" d="M18.5 4 8 18.4h6.6L13 28l11-14.6h-6.4z"/>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/>
+    </symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header" id="site-header">
+    <div class="container nav">
+      <a class="wordmark" href="#top" aria-label="VoltEdge Energy, back to top">
+        <svg class="wordmark__mark" width="36" height="36" aria-hidden="true" focusable="false"><use href="#ve-mark"/></svg>
+        <span class="wordmark__text">VoltEdge<small>Energy</small></span>
+      </a>
+
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only" data-toggle-label>Open menu</span>
+        <span class="nav__bars" aria-hidden="true"></span>
+      </button>
+
+      <nav class="nav__menu" id="primary-nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#approach">Our approach</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#faqs">FAQs</a></li>
+        </ul>
+        <a class="btn btn--primary btn--sm nav__cta" href="#quote">Request a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__media">
+        <img
+          src="assets/solar-hero-1280.jpg"
+          srcset="assets/solar-hero-800.jpg 800w, assets/solar-hero-1280.jpg 1280w, assets/solar-hero-1800.jpg 1800w"
+          sizes="(min-width: 900px) 64vw, 100vw"
+          width="1800" height="1200"
+          fetchpriority="high"
+          alt="Two installers in hard hats and high-visibility vests fixing solar panels to mounting rails on a metal roof">
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow eyebrow--light">Solar &middot; Backup power &middot; Electrical solutions</p>
+          <h1 id="hero-title">Reliable Energy. <span class="hero__accent">Designed Around Your Needs.</span></h1>
+          <p class="hero__lead">Explore solar and backup power solutions designed around your property, energy requirements and budget.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#quote">Request a Quote</a>
+            <a class="btn btn--ghost" href="#solutions">Explore Our Solutions</a>
+          </div>
+          <p class="hero__paths">
+            <span>Looking for:</span>
+            <a href="#residential">Residential</a>
+            <a href="#commercial">Commercial</a>
+            <a href="#backup">Backup power</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROBLEM ============ -->
+    <section class="section problem" id="problem" aria-labelledby="problem-title">
+      <div class="container problem__grid">
+        <div class="problem__lead reveal">
+          <p class="eyebrow">The starting point</p>
+          <h2 id="problem-title">Most energy decisions start with a problem, not a product.</h2>
+          <p>Before choosing panels, inverters or batteries, most customers are trying to answer a simpler question: what do we need our power to do?</p>
+          <p class="problem__resolve">VoltEdge Energy is designed around that starting point. Understand the need first, then explore the options.</p>
+        </div>
+
+        <ol class="needs">
+          <li class="reveal">
+            <span class="needs__n" aria-hidden="true">01</span>
+            <div>
+              <h3>Power that can&rsquo;t be relied on</h3>
+              <p>Interruptions to supply affect work, study and household routines. Many customers begin by asking how to keep the essentials running.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="needs__n" aria-hidden="true">02</span>
+            <div>
+              <h3>A need for backup power</h3>
+              <p>Some properties need continuity during outages more than they need to generate large amounts of electricity. The answer depends on what has to stay on.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="needs__n" aria-hidden="true">03</span>
+            <div>
+              <h3>Energy requirements for a home or business</h3>
+              <p>A household and a workshop use power very differently. Understanding daily use and future plans comes before choosing equipment.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="needs__n" aria-hidden="true">04</span>
+            <div>
+              <h3>Uncertainty about what is suitable</h3>
+              <p>Solar, inverter and battery terms can be confusing. Customers often want clear options, explained in plain language, before they commit.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ SOLUTIONS ============ -->
+    <section class="section solutions" id="solutions" aria-labelledby="solutions-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Solutions</p>
+          <h2 id="solutions-title">Energy options for homes, businesses and continuity.</h2>
+        </div>
+
+        <!-- Residential -->
+        <article class="solution reveal" id="residential">
+          <figure class="solution__media">
+            <!-- ASSET NEEDED: replace this illustration with a residential rooftop solar photograph
+                 (see README, "Assets still needed"). -->
+            <svg class="solution__art" viewBox="0 0 612 408" role="presentation" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <clipPath id="roof-clip"><polygon points="128,218 232,116 380,116 484,218"/></clipPath>
+              </defs>
+              <rect width="612" height="408" fill="#DDE8DE"/>
+              <circle cx="506" cy="82" r="30" fill="#E8A93A"/>
+              <g stroke="#E8A93A" stroke-width="4" stroke-linecap="round">
+                <path d="M506 30v10M506 124v10M454 82h10M548 82h10M469 45l7 7M536 112l7 7M543 45l-7 7M476 112l-7 7"/>
+              </g>
+              <rect y="330" width="612" height="78" fill="#C3D5C5"/>
+              <rect x="150" y="214" width="304" height="124" fill="#FBF9F4"/>
+              <polygon points="116,222 232,106 380,106 496,222" fill="#1C4B37"/>
+              <g clip-path="url(#roof-clip)">
+                <rect x="120" y="110" width="372" height="112" fill="#102A1E"/>
+                <g stroke="#3D7A5B" stroke-width="2">
+                  <path d="M186 110v112M240 110v112M294 110v112M348 110v112M402 110v112M456 110v112"/>
+                  <path d="M120 152h372M120 188h372"/>
+                </g>
+              </g>
+              <polygon points="128,218 232,116 380,116 484,218" fill="none" stroke="#E8A93A" stroke-width="3" stroke-linejoin="round"/>
+              <rect x="278" y="262" width="48" height="76" fill="#E8A93A"/>
+              <rect x="180" y="248" width="56" height="46" fill="#CFE0D2"/>
+              <rect x="368" y="248" width="56" height="46" fill="#CFE0D2"/>
+              <path d="M180 271h56M208 248v46M368 271h56M396 248v46" stroke="#FBF9F4" stroke-width="3"/>
+            </svg>
+          </figure>
+          <div class="solution__body">
+            <p class="solution__tag">Residential energy</p>
+            <h3>Solar and backup power options for households.</h3>
+            <p>Every home uses electricity differently. Explore options that reflect how your household lives, what you want to keep running and how your property is set up.</p>
+            <ul class="ticks">
+              <li>What matters most during an outage</li>
+              <li>Roof space, orientation and shading</li>
+              <li>Budget, and the option to phase a project</li>
+            </ul>
+            <a class="link-cta" href="#quote" data-prefill="residential">Request a residential quote <svg width="18" height="18" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+
+        <!-- Commercial -->
+        <article class="solution solution--flip reveal" id="commercial">
+          <figure class="solution__media">
+            <img src="assets/solar-commercial-array.jpg" width="612" height="408" loading="lazy"
+                 alt="Rows of solar panels covering a large rooftop under a clear sky">
+          </figure>
+          <div class="solution__body">
+            <p class="solution__tag">Commercial energy</p>
+            <h3>Solutions for businesses with different operational requirements.</h3>
+            <p>A shop, a farm and a workshop all have different priorities. Commercial energy planning starts with how your business operates, when it needs power most and what an interruption means for you.</p>
+            <ul class="ticks">
+              <li>Operating hours and critical equipment</li>
+              <li>Available roof or ground space</li>
+              <li>Plans for growth or additional sites</li>
+            </ul>
+            <a class="link-cta" href="#quote" data-prefill="commercial">Request a commercial quote <svg width="18" height="18" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+
+        <!-- Backup -->
+        <article class="solution reveal" id="backup">
+          <figure class="solution__media">
+            <img src="assets/solar-inverter-wiring.jpg" width="612" height="407" loading="lazy"
+                 alt="A technician in a hard hat connecting cabling to an inverter mounted on an exterior wall">
+          </figure>
+          <div class="solution__body">
+            <p class="solution__tag">Backup power</p>
+            <h3>Inverter and battery options for continuity during outages.</h3>
+            <p>If outages are the main problem, the conversation starts with essentials: which circuits and appliances need to stay on, and for how long. A backup system can then be shaped around those priorities.</p>
+            <ul class="ticks">
+              <li>Which loads are essential</li>
+              <li>Whether solar is added now or later</li>
+              <li>Space, ventilation and safe installation</li>
+            </ul>
+            <a class="link-cta" href="#quote" data-prefill="backup">Discuss backup power <svg width="18" height="18" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="container services__grid">
+        <div class="services__intro reveal">
+          <p class="eyebrow eyebrow--light">Services</p>
+          <h2 id="services-title">Support at each stage of an energy project.</h2>
+          <p>From the first conversation to life after installation, these are the areas a good provider should be able to talk you through.</p>
+        </div>
+
+        <ul class="service-list">
+          <li class="reveal">
+            <h3>Energy assessment</h3>
+            <p>Understanding how your property uses power, what must stay on during outages and what your budget allows.</p>
+          </li>
+          <li class="reveal">
+            <h3>System design</h3>
+            <p>Matching solar, inverter and battery options to those requirements, explained in plain language.</p>
+          </li>
+          <li class="reveal">
+            <h3>Installation planning</h3>
+            <p>Scheduling, access, safe working practice and electrical considerations, discussed before work begins.</p>
+          </li>
+          <li class="reveal">
+            <h3>Maintenance and support</h3>
+            <p>A conversation about aftercare and servicing arrangements, so you know what to expect once the system is running.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ APPROACH ============ -->
+    <section class="section approach" id="approach" aria-labelledby="approach-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Our approach</p>
+          <h2 id="approach-title">Four steps from first question to a clear quotation.</h2>
+        </div>
+
+        <ol class="steps">
+          <li class="reveal">
+            <span class="steps__n" aria-hidden="true">1</span>
+            <h3>Tell us about your energy requirements</h3>
+            <p>Share what you want to power, how you use energy and what is causing difficulty today.</p>
+          </li>
+          <li class="reveal">
+            <span class="steps__n" aria-hidden="true">2</span>
+            <h3>Discuss the property&rsquo;s needs and available options</h3>
+            <p>We talk through the property, your priorities and the options that could suit them.</p>
+          </li>
+          <li class="reveal">
+            <span class="steps__n" aria-hidden="true">3</span>
+            <h3>Receive a tailored quotation</h3>
+            <p>A proposal based on what you told us, with what is included set out clearly.</p>
+          </li>
+          <li class="reveal">
+            <span class="steps__n" aria-hidden="true">4</span>
+            <h3>Plan the next steps if you choose to proceed</h3>
+            <p>If the quotation suits you, timing and installation planning are agreed together.</p>
+          </li>
+        </ol>
+
+        <p class="approach__cta reveal"><a class="link-cta" href="#quote">Start with the quotation request <svg width="18" height="18" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></p>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow eyebrow--light">Projects</p>
+          <h2 id="projects-title">Illustrative project gallery.</h2>
+          <p>These concept visuals show the kinds of work a solar and electrical company handles. They are illustrations, not completed projects for named clients.</p>
+        </div>
+
+        <div class="gallery" role="region" aria-label="Illustrative project gallery" tabindex="0">
+          <figure class="tile">
+            <div class="tile__img">
+              <img src="assets/solar-install-detail.jpg" width="600" height="750" loading="lazy"
+                   alt="An installer in a high-visibility vest using a drill to fix a solar panel to a mounting rail">
+              <span class="tile__badge">Illustrative concept</span>
+            </div>
+            <figcaption>
+              <span class="tile__n">01</span>
+              <strong>Rooftop installation in progress</strong>
+              <span>Fixing solar modules to mounting rails on a metal roof.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="tile">
+            <div class="tile__img">
+              <img src="assets/solar-team-planning.jpg" width="800" height="600" loading="lazy" class="pos-team"
+                   alt="Two installers on a rooftop beside a laptop, reviewing work among rows of solar panels">
+              <span class="tile__badge">Illustrative concept</span>
+            </div>
+            <figcaption>
+              <span class="tile__n">02</span>
+              <strong>Installation planning on site</strong>
+              <span>Reviewing layout and equipment alongside the installation team.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="tile">
+            <div class="tile__img">
+              <img src="assets/solar-panel-detail.jpg" width="612" height="459" loading="lazy"
+                   alt="Close-up of the surface of a solar panel showing individual cells">
+              <span class="tile__badge">Illustrative concept</span>
+            </div>
+            <figcaption>
+              <span class="tile__n">03</span>
+              <strong>Solar module detail</strong>
+              <span>A close view of the cells that convert sunlight into electricity.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRUST / DECISION SUPPORT ============ -->
+    <section class="section trust" id="trust" aria-labelledby="trust-title">
+      <div class="container trust__grid">
+        <div class="trust__intro reveal">
+          <p class="eyebrow">Choosing a provider</p>
+          <h2 id="trust-title">What to look for when choosing a solar provider.</h2>
+          <p>Whoever you decide to work with, these are the questions worth asking. They are criteria for you to weigh up, not promises.</p>
+        </div>
+
+        <ul class="criteria">
+          <li class="reveal">
+            <h3>A clear picture of your real energy needs</h3>
+            <p class="criteria__ask"><span>Ask</span> How will you work out what my property actually uses?</p>
+          </li>
+          <li class="reveal">
+            <h3>Equipment suited to your requirements</h3>
+            <p class="criteria__ask"><span>Ask</span> Why is this equipment right for my needs, rather than simply available?</p>
+          </li>
+          <li class="reveal">
+            <h3>Installation quality and electrical safety</h3>
+            <p class="criteria__ask"><span>Ask</span> Who carries out the installation, and how is the work checked?</p>
+          </li>
+          <li class="reveal">
+            <h3>Clear quotation terms</h3>
+            <p class="criteria__ask"><span>Ask</span> What is included, what is not, and what could change the price?</p>
+          </li>
+          <li class="reveal">
+            <h3>After-sales support and maintenance</h3>
+            <p class="criteria__ask"><span>Ask</span> What happens if something needs attention after installation?</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section faqs" id="faqs" aria-labelledby="faqs-title">
+      <div class="container faqs__grid">
+        <div class="faqs__intro reveal">
+          <p class="eyebrow">FAQs</p>
+          <h2 id="faqs-title">Questions customers often ask.</h2>
+          <p>Short, plain answers. Every property is different, so a proper assessment always comes before a recommendation.</p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq">
+            <summary>How is a suitable solar system determined?</summary>
+            <div class="faq__a">
+              <p>It starts with how your property uses electricity: which appliances or equipment matter most, when you use them and what you want to achieve, such as reducing reliance on the grid or keeping essentials running during outages. Roof or ground space, shading and budget are considered alongside this. A proper assessment is needed before any system can be recommended.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What is the difference between solar panels and backup batteries?</summary>
+            <div class="faq__a">
+              <p>Solar panels generate electricity when the sun is shining. Batteries store electrical energy so it can be used later, for example during an outage or in the evening. Some systems use panels alone, some use batteries with an inverter, and some combine them. Which combination suits you depends on your needs.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What information is needed for a quotation?</summary>
+            <div class="faq__a">
+              <p>Typically: whether the property is residential or commercial, what you want to power or protect, a rough idea of how you use electricity (an electricity bill helps if you have one), the type and condition of the roof or available space, and any budget or timing considerations. If you are unsure about some of these, say so. You can still start the conversation.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>Are residential and commercial requirements different?</summary>
+            <div class="faq__a">
+              <p>Often, yes. Commercial properties can have different operating hours, larger or more varied loads, and different consequences when power is interrupted. Residential projects usually focus on household routines and comfort. That is why the enquiry form asks which one applies.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>How is installation planned, and what about maintenance?</summary>
+            <div class="faq__a">
+              <p>Once a quotation is accepted, installation is planned around the property, access and equipment availability. Maintenance needs vary from system to system, so it is worth discussing aftercare and servicing arrangements before you decide, not after.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FINAL CONVERSION ============ -->
+    <section class="section quote" id="quote" aria-labelledby="quote-title">
+      <div class="container quote__grid">
+        <div class="quote__intro reveal">
+          <p class="eyebrow eyebrow--light">Request a quote</p>
+          <h2 id="quote-title">Let&rsquo;s Find the Right Energy Solution for Your Property.</h2>
+          <p>Tell us what you want to power or protect. The more you share, the easier it is to point you toward suitable options.</p>
+          <p class="quote__helps">Helpful to include</p>
+          <ul class="quote__list">
+            <li>Whether it is a home or a business</li>
+            <li>What you want to keep running</li>
+            <li>Anything that is causing problems today</li>
+          </ul>
+          <p class="quote__alt" id="quote-alt" hidden></p>
+        </div>
+
+        <form class="form reveal" id="quote-form" novalidate>
+          <div class="form__demo" id="demo-note">
+            <strong>Demonstration form.</strong> This is a concept site, so nothing you enter here is sent or stored.
+          </div>
+
+          <div class="field">
+            <label for="f-name">Your name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name">
+            <p class="field__error" id="e-name" aria-live="polite"></p>
+          </div>
+
+          <fieldset class="field" aria-describedby="e-type">
+            <legend>This enquiry is for</legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="type" value="Residential"><span>Residential</span></label>
+              <label class="choice"><input type="radio" name="type" value="Commercial"><span>Commercial</span></label>
+            </div>
+            <p class="field__error" id="e-type" aria-live="polite"></p>
+          </fieldset>
+
+          <div class="field">
+            <label for="f-need">Main energy requirement</label>
+            <select id="f-need" name="need" required aria-describedby="e-need">
+              <option value="">Choose one</option>
+              <option>Backup power during outages</option>
+              <option>Reduce reliance on grid supply</option>
+              <option>Power for a new or extended property</option>
+              <option>Not sure yet, I need guidance</option>
+            </select>
+            <p class="field__error" id="e-need" aria-live="polite"></p>
+          </div>
+
+          <fieldset class="field" aria-describedby="e-method">
+            <legend>Preferred contact method</legend>
+            <div class="choices choices--3">
+              <label class="choice"><input type="radio" name="method" value="Phone call"><span>Phone call</span></label>
+              <label class="choice"><input type="radio" name="method" value="WhatsApp"><span>WhatsApp</span></label>
+              <label class="choice"><input type="radio" name="method" value="Email"><span>Email</span></label>
+            </div>
+            <p class="field__error" id="e-method" aria-live="polite"></p>
+          </fieldset>
+
+          <div class="field">
+            <label for="f-contact" id="l-contact">Phone, WhatsApp or email</label>
+            <input id="f-contact" name="contact" type="text" inputmode="text" autocomplete="off" required aria-describedby="e-contact">
+            <p class="field__error" id="e-contact" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="f-details">Tell us about the property or project <span class="optional">(optional)</span></label>
+            <textarea id="f-details" name="details" rows="4"></textarea>
+          </div>
+
+          <!-- Honeypot for when a real form service is connected -->
+          <div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+
+          <button class="btn btn--primary btn--block" type="submit" id="submit-btn">Request a Quote</button>
+          <div class="form__status" id="form-status" role="status" aria-live="polite" tabindex="-1"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a class="wordmark wordmark--footer" href="#top" aria-label="VoltEdge Energy, back to top">
+          <svg class="wordmark__mark" width="36" height="36" aria-hidden="true" focusable="false"><use href="#ve-mark"/></svg>
+          <span class="wordmark__text">VoltEdge<small>Energy</small></span>
+        </a>
+        <p>A fictional solar, backup power and electrical solutions brand, created to demonstrate how a service website can guide visitors toward a quotation request.</p>
+      </div>
+
+      <nav aria-label="Footer">
+        <h2 class="footer__h">Explore</h2>
+        <ul class="footer__links">
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#approach">Our approach</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#faqs">FAQs</a></li>
+          <li><a href="#quote">Request a Quote</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h2 class="footer__h">Contact</h2>
+        <ul class="footer__links" id="footer-contact">
+          <li class="footer__placeholder">Contact details are not shown on this concept website.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>Concept website designed by <a href="https://poppedcalf.github.io/Local-Edge/" target="_blank" rel="noopener noreferrer">Local Edge</a> for portfolio demonstration. VoltEdge Energy is not a registered business.</p>
+      <p>&copy; <span id="year">2026</span> Local Edge</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
