@@ -522,3 +522,4 @@ fieldset[data-invalid="true"] .choice span { border-color: var(--error); }
   *, *::before, *::after { transition: none !important; animation: none !important; }
   .js .reveal { opacity: 1; transform: none; }
 }
+.thumb-solar { background: linear-gradient(145deg, #0F2A1E, #1C4B37); }
